@@ -118,6 +118,7 @@ bool LinkedList<T>::removeBack()
 	//curr should be the last item in the list, prev the one before it
 	prev->setNext(nullptr);
 	delete curr;
+	m_size--;
 	return true;
 }
 
